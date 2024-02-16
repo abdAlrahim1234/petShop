@@ -655,6 +655,9 @@ svg {
   padding-top: 20px;
   padding-bottom: 10px;
 }
+.carousel-inner {
+  padding: 6rem 0;
+}
 .carousel-inner img {
   height: 90vh !important;
 }
@@ -675,7 +678,17 @@ iframe {
 .contactsLinks img {
   width: 100px;
 }
-
+.slider_div p {
+  color: black !important;
+}
 p {
   color: white !important;
+}
+.youtubeLogo svg {
+  width: 70px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.youtubeLogo svg:hover {
+  transform: scale(1.2);
 }
