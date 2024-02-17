@@ -244,7 +244,7 @@ body {
 /* end fratu  */
 /* start testmonial  */
 .testemonial {
-  min-height: 100vh;
+ height: 100vh;
   /* background: url('../img/testmonial/header.jpg')   no-repeat center center; */
   background: url("https://img.youm7.com/ArticleImgs/2018/2/16/243458-%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA-%D8%A3%D9%84%D9%8A%D9%81%D8%A9-(3).jpg")
     no-repeat center center;
@@ -260,8 +260,8 @@ body {
 }
 .testimg {
   border-radius: 50% 50%;
-  margin: 20px;
-  padding: 20px;
+  /* margin: 20px; */
+  padding: 20px 0;
 }
 .testimg img {
   border-radius: 30px;
@@ -708,7 +708,7 @@ iframe {
   margin: 5px;
 }
 .contactsLinks img {
-  width: 100px;
+  width: 200px;
 }
 .slider_div p {
   color: black !important;
@@ -723,4 +723,34 @@ p {
 }
 .youtubeLogo svg:hover {
   transform: scale(1.2);
+}
+
+h3{
+  color: white;
+}
+.contactlistPerent{
+  display: flex;
+  justify-content: space-between;
+}
+.slidercustome{
+  position: relative;
+ 
+}
+
+.slidercustome .carousel-indicators{
+  position:absolute;
+  bottom: 0;
+}
+
+.slidercustome .carousel-inner img{
+width: 550px;
+
+object-fit: cover;
+}
+@media screen and (max-width:700px) {
+  .slidercustome .carousel-inner img{
+    width: 300px;
+   
+    object-fit: cover;
+    }
 }
