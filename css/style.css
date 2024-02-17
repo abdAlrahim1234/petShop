@@ -58,7 +58,7 @@ body {
   right: 10px;
   border-top-color: red;
   animation-name: spin;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-duration: 2.1s;
@@ -71,8 +71,8 @@ body {
   right: 23px;
   border-top-color: indigo;
   animation-name: spin;
-  animation-delay:.5s;
-  animation-duration: .5s;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
@@ -243,14 +243,33 @@ body {
 }
 /* end fratu  */
 /* start testmonial  */
+@media screen and (max-width: 700px) {
+  .testemonial {
+    position: relative;
+    height: 20vh;
+  }
+}
 .testemonial {
- height: 100vh;
+  /* text-align: center; */
+  height: 100vh;
+  
   /* background: url('../img/testmonial/header.jpg')   no-repeat center center; */
   background: url("https://img.youm7.com/ArticleImgs/2018/2/16/243458-%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA-%D8%A3%D9%84%D9%8A%D9%81%D8%A9-(3).jpg")
     no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   color: #ffffff;
+}
+.toggleImg{
+  /* background-color: rebeccapurple; */
+margin: auto 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  z-index: 999;
+  transform: translateY(-157%);
+  top: 50%;
 }
 .testemonial .h1 {
   font-family: "Lobster", cursive;
@@ -667,7 +686,6 @@ svg {
     overflow: hidden;
     /* padding: 0 1rem; */
   }
-  
 }
 @media screen and (max-width: 500px) {
   .upperCursor {
@@ -676,7 +694,6 @@ svg {
     overflow: hidden;
     /* padding: 0 1rem; */
   }
-  
 }
 @media screen and (min-width: 450px) and (max-width: 820px) {
   .upperCursor {
@@ -686,7 +703,6 @@ svg {
     /* padding: 0 1rem; */
   }
 }
-
 
 .carousel-inner img {
   height: 100% !important;
@@ -717,6 +733,7 @@ p {
   color: white !important;
 }
 .youtubeLogo svg {
+  margin: 0.5rem 0;
   width: 70px;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
@@ -725,32 +742,45 @@ p {
   transform: scale(1.2);
 }
 
-h3{
+h3 {
   color: white;
 }
-.contactlistPerent{
+.contactlistPerent {
   display: flex;
   justify-content: space-between;
 }
-.slidercustome{
+.slidercustome {
   position: relative;
- 
 }
 
-.slidercustome .carousel-indicators{
-  position:absolute;
+.slidercustome .carousel-indicators {
+  position: absolute;
   bottom: 0;
 }
 
-.slidercustome .carousel-inner img{
-width: 550px;
+.slidercustome .carousel-inner img {
+  width: 550px;
 
-object-fit: cover;
+  object-fit: cover;
 }
-@media screen and (max-width:700px) {
-  .slidercustome .carousel-inner img{
+@media screen and (max-width: 700px) {
+  .slidercustome .carousel-inner img {
     width: 300px;
-   
+
     object-fit: cover;
-    }
+  }
+}
+
+.lead{
+  background-color: rgba(0, 0, 0, 0.7) ;
+  display: block ;
+  width: 50%;
+  margin: auto;
+  border-radius: 1rem;
+  padding: .5rem .9rem;
+
+}
+.lead p{
+  color:wheat !important ;
+
 }
